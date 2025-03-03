@@ -1,0 +1,14 @@
+{% extends "blog/base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="auth-container">
+    <h2>Login</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="auth-button">Log In</button>
+    </form>
+    <a href="{% url 'account_signup' %}" class="auth-link">Don't have an account? Sign up</a>
+</div>
+{% endblock %}

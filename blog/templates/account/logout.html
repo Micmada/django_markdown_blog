@@ -1,0 +1,14 @@
+{% extends "blog/base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="auth-container">
+    <h2>Log Out</h2>
+    <p>Are you sure you want to log out?</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="auth-button">Log Out</button>
+    </form>
+    <a href="{% url 'post_list' %}" class="auth-link">Cancel</a>
+</div>
+{% endblock %}

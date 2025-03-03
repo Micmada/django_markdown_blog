@@ -1,0 +1,14 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+    <h1>Welcome to My Blog</h1>
+
+    {% for post in posts %}
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.formatted_markdown|safe }}</p>
+        <a class="button" href="{% url 'post_detail' post.slug %}">Read More</a>
+        <hr>
+    {% empty %}
+        <p>No posts yet.</p>
+    {% endfor %}
+{% endblock %}
