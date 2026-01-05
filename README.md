@@ -6,7 +6,6 @@ details: >
 technologies:
   - django
   - markdownx
-  - python
   - github-api
 hostedUrl: 
 ---
