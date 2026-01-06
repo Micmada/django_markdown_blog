@@ -1,12 +1,22 @@
 ---
-description: Blogging platform with Markdown support and user authentication
+description: Full-featured Django blogging platform with Markdown support and user authentication
 details: >
-  A simple Django blog with CRUD functionality, Markdown rendering, responsive UI,
-  and comments. Users can sign up, create posts, and manage content efficiently.
+  A complete content management system built with Django featuring rich Markdown
+  editing via django-markdownx, full user authentication system with signup and
+  login, and comprehensive CRUD operations for blog posts. Users can create
+  formatted posts with bold text, italics, headings, and code blocks, manage
+  their content through an intuitive interface, and engage with an integrated
+  comment system. The platform includes Django's built-in admin panel for content
+  moderation, custom CSS styling for a clean modern UI, and responsive design
+  that works across all devices. Features post listing with author attribution,
+  detailed post views, secure user management, and comment threading. Built with
+  Django forms for data validation, SQLite database for development, and supports
+  easy deployment to Railway, Render, or other cloud platforms. Optional GitHub
+  Actions integration for CI/CD workflows.
 technologies:
   - django
-  - markdownx
-  - github-api
+  - markdown
+  - sqlite
 hostedUrl: 
 ---
 
