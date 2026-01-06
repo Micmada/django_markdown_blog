@@ -11,6 +11,7 @@ hostedUrl:
 ---
 
 
+
 # Django Markdown Blog
 
 A simple yet powerful **blogging platform** built with **Django**, featuring **Markdown support**, **user authentication**, and **comments**. 
